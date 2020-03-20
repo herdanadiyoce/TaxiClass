@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Class
+namespace TugasClassDanObject
 {
-
     public class Taxi
     {
         public string DriverName { get; set; }
@@ -16,8 +15,8 @@ namespace Class
 
         public void TaxiInfo()
         {
-            Console.WriteLine("Driver Name         : {0}", DriverName);
-            if(OnDuty == true)
+            Console.WriteLine("Nama Driver : {0}", DriverName);
+            if (OnDuty == true)
             {
                 status = "Yes";
             }
@@ -25,19 +24,17 @@ namespace Class
             {
                 status = "No";
             }
-            Console.WriteLine("On Duty             : {0}", status);
-            Console.WriteLine("Number of Passenger : {0}\n", NumbOfPassenger);
+            Console.WriteLine("On Duty : {0}", status);
+            Console.WriteLine("Number Of Passenger : {0}\n", NumbOfPassenger);
         }
 
         public void PickUpPassenger()
         {
             Console.WriteLine("{0} sedang menjemput penumpang", DriverName);
         }
-
         public void DropOfPassenger()
         {
             Console.WriteLine("{0} sedang mengantar penumpang", DriverName);
         }
-
     }
 }
