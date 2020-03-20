@@ -40,23 +40,4 @@ namespace Class
         }
 
     }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-            Taxi taxi = new Taxi();
-
-            taxi.DriverName = "Jono";
-            taxi.OnDuty = true;
-            taxi.NumbOfPassenger = 10;
-
-            taxi.TaxiInfo();
-            taxi.PickUpPassenger();
-            taxi.DropOfPassenger();
-
-            Console.ReadKey();
-        }
-    }
 }
